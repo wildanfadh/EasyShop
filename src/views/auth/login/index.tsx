@@ -5,7 +5,7 @@ export const LoginAuthViews = () => {
   const [termAndConditionChecked, setTermAndConditionChecked] = useState(false);
   return (
     <div>
-      <div className="flex flex-row justify-evenly w-full h-full my-10 py-10">
+      <div className="flex flex-row justify-evenly w-full h-full my-10 py-10  ">
         <div className="w-1/4">
           <div>
             <header className="text-2xl font-semibold">Sign In</header>
@@ -25,12 +25,12 @@ export const LoginAuthViews = () => {
                   <span className="label-text">Your email*</span>
                 </label>
                 <input
-                  type="text"
+                  type="email"
                   placeholder="Email..."
                   className="input input-md input-bordered w-full max-w-xs"
                 />
               </div>
-              {/* Email */}
+              {/* Password */}
               <div className="form-control w-full max-w-xs my-2">
                 <label className="label">
                   <span className="label-text">Your password*</span>

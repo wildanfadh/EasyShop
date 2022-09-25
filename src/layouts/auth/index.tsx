@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 export const AuthLayout = () => {
   return (
@@ -24,8 +24,18 @@ export const AuthLayout = () => {
                 <a>Contact</a>
               </li>
             </ul>
-            <a className="btn btn-sm btn-secondary text-neutral">Sign Up</a>
-            <a className="btn btn-sm btn-outline btn-secondary">Login</a>
+            <NavLink
+              to="/auth/register"
+              className="btn btn-sm btn-secondary text-neutral"
+            >
+              Sign Up
+            </NavLink>
+            <NavLink
+              to="/auth/login"
+              className="btn btn-sm btn-outline btn-secondary"
+            >
+              Login
+            </NavLink>
           </div>
         </div>
       </div>

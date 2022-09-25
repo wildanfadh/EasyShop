@@ -1,7 +1,9 @@
 import React from "react";
 
+import { CoreRouter } from "./router";
+
 const App = () => {
-  return <div>App</div>;
+  return <CoreRouter />;
 };
 
 export default App;

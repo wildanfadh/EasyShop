@@ -5,7 +5,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthLayout, MainLayout } from "../layouts";
 
 // auth views
-import { LoginAuthViews, RegisterAuthViews, ResetAuthViews } from "../views";
+import {
+  LoginAuthViews,
+  RegisterAuthViews,
+  ResetAuthViews,
+  SetPasswordAuthViews,
+} from "../views";
 
 // main views
 import {
@@ -27,6 +32,7 @@ export const CoreRouter = () => {
           <Route path="login" element={<LoginAuthViews />} />
           <Route path="register" element={<RegisterAuthViews />} />
           <Route path="reset" element={<ResetAuthViews />} />
+          <Route path="set_pass" element={<SetPasswordAuthViews />} />
         </Route>
 
         {/* Main */}

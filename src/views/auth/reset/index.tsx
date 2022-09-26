@@ -2,8 +2,6 @@ import React, { useState, useEffect, useCallback } from "react";
 import { NavLink } from "react-router-dom";
 
 export const ResetAuthViews = () => {
-  const [termAndConditionChecked, setTermAndConditionChecked] = useState(false);
-  const [showPassword, setShowPassword] = useState(false);
   return (
     <div>
       <div className="flex flex-row justify-evenly w-full h-full my-10 py-10">

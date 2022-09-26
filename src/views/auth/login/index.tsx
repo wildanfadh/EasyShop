@@ -41,7 +41,10 @@ export const LoginAuthViews = () => {
                   className="input input-md input-bordered w-full max-w-xs"
                 />
               </div>
-              <NavLink className="label-text-alt text-secondary float-right">
+              <NavLink
+                to="/auth/reset"
+                className="label-text-alt text-secondary float-right"
+              >
                 Forgot password?
               </NavLink>
               <div className="form-control w-full max-w-xs mt-10">

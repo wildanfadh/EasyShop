@@ -5,8 +5,8 @@ export const LoginAuthViews = () => {
   const [termAndConditionChecked, setTermAndConditionChecked] = useState(false);
   return (
     <div>
-      <div className="flex flex-row justify-evenly w-full h-full my-10 py-10  ">
-        <div className="w-1/4">
+      <div className="flex flex-row justify-evenly w-full h-full my-10 py-10">
+        <div className="lg:w-1/4">
           <div>
             <header className="text-2xl font-semibold">Sign In</header>
             <p className="text-sm">
@@ -71,8 +71,8 @@ export const LoginAuthViews = () => {
             </form>
           </div>
         </div>
-        <div className="bg-accent w-0.5 min-h-full"></div>
-        <div className="w-1/4">
+        <div className="bg-accent w-0.5 min-h-full hidden lg:block"></div>
+        <div className="w-1/4 hidden lg:block">
           <header className="text-lg font-semibold">Create Account</header>
           <p className="text-sm font-thin">Create account to manage orders</p>
           <NavLink

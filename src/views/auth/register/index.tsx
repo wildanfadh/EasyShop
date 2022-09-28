@@ -7,18 +7,9 @@ export const RegisterAuthViews = () => {
   return (
     <div>
       <div className="flex flex-row justify-evenly w-full h-full my-10 py-10">
-        <div className="w-1/4">
+        <div className="w-[70%] lg:w-1/4">
           <div>
             <header className="text-2xl font-semibold">Create account</header>
-            {/* <p className="text-sm">
-              New User?{" "}
-              <NavLink
-                to="/auth/register"
-                className="text-secondary font-semibold"
-              >
-                Create account
-              </NavLink>
-            </p> */}
             <form>
               {/* Fullname */}
               <div className="form-control w-full max-w-xs my-2">
@@ -87,8 +78,8 @@ export const RegisterAuthViews = () => {
             </form>
           </div>
         </div>
-        <div className="bg-accent w-0.5 min-h-full"></div>
-        <div className="w-1/4">
+        <div className="bg-accent w-0.5 min-h-full hidden lg:block"></div>
+        <div className="w-1/4 hidden lg:block">
           <header className="text-lg font-semibold">Sign In</header>
           <p className="text-sm font-thin">Login to manage orders</p>
           <NavLink

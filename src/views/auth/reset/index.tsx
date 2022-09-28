@@ -5,7 +5,7 @@ export const ResetAuthViews = () => {
   return (
     <div>
       <div className="flex flex-row justify-evenly w-full h-full my-10 py-10">
-        <div className="w-1/4">
+        <div className="w-[70%] lg:w-1/4">
           <div className="text-center">
             <header className="text-2xl font-semibold">Reset Password</header>
             <p className="text-xs font-thin my-1">

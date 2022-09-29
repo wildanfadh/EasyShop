@@ -58,10 +58,10 @@ export const SetPasswordAuthViews = () => {
                 </div>
               </div>
               <NavLink
-                to="/auth/reset"
+                to="/auth/login"
                 className="btn btn-secondary text-neutral font-semibold my-10 min-w-full"
               >
-                Reset Password
+                Login
               </NavLink>
             </form>
             <p className="text-xs font-thin mt-5">

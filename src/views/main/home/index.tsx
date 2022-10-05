@@ -9,6 +9,13 @@ export const HomeMainViews = () => {
   return (
     <div>
       <div className="flex w-full h-[700px] bg-slate-100">
+        <div className="flex flex-col space-y-3 absolute top-36 p-10 lg:top-80 lg:left-24 z-10">
+          <h5 className="text-2xl">GET YOURS</h5>
+          <h3 className="font-bold text-black font-sans text-4xl">
+            YOUR DREAM ITEM QUICKLY
+          </h3>
+          <button className="btn btn-secondary lg:w-40">Sign Up</button>
+        </div>
         <img
           src={heroVector}
           alt="vector1"

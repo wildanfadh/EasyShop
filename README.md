@@ -46,7 +46,7 @@
 
 ## :dart: About
 
-Describe your project
+Easyshop is a simple E-commerce project running with <a href="https://vitejs.dev/" target="_blank">Vite</a>, and the help of free API from <a href="https://fakeapi.platzi.com/" target="_blank">Platzi Fake Store API</a>.
 
 ## :sparkles: Features
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink, Outlet } from "react-router-dom";
 
 // assets
 import heroVector from "../../../assets/vector1.svg";
@@ -14,7 +15,9 @@ export const HomeMainViews = () => {
           <h3 className="font-bold text-black font-sans text-4xl">
             YOUR DREAM ITEM QUICKLY
           </h3>
-          <button className="btn btn-secondary lg:w-40">Sign Up</button>
+          <NavLink to="/auth/register" className="btn btn-secondary lg:w-40">
+            Sign Up
+          </NavLink>
         </div>
         <img
           src={heroVector}

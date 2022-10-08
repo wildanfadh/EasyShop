@@ -1,5 +1,7 @@
 import React from "react";
 
-export const DeliveryInfoCheckout = () => {
+const DeliveryInfoCheckout = () => {
   return <div>DeliveryInfoCheckout</div>;
 };
+
+export default DeliveryInfoCheckout;

@@ -1,5 +1,7 @@
 import React from "react";
 
-export const ProductDetailMainViews = () => {
+const ProductDetailMainViews = () => {
   return <div>ProductDetailMainViews</div>;
 };
+
+export default ProductDetailMainViews;

@@ -6,7 +6,7 @@ import heroVector from "../../../assets/vector1.svg";
 import Image1 from "../../../assets/Image1.png";
 import Image2 from "../../../assets/Image2.png";
 
-export const HomeMainViews = () => {
+const HomeMainViews = () => {
   return (
     <div>
       <div className="flex w-full h-[700px] bg-slate-100">
@@ -38,3 +38,5 @@ export const HomeMainViews = () => {
     </div>
   );
 };
+
+export default HomeMainViews;

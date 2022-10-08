@@ -1,5 +1,7 @@
 import React from "react";
 
-export const AccountInfoCheckout = () => {
+const AccountInfoCheckout = () => {
   return <div>AccountInfoCheckout</div>;
 };
+
+export default AccountInfoCheckout;

@@ -1,7 +1,11 @@
-// export * from "./login";
 import LoginAuthViews from "./login";
-export * from "./register";
-export * from "./reset";
-export * from "./set_pass";
+import RegisterAuthViews from "./register";
+import ResetAuthViews from "./reset";
+import SetPasswordAuthViews from "./set_pass";
 
-export { LoginAuthViews };
+export {
+  LoginAuthViews,
+  RegisterAuthViews,
+  ResetAuthViews,
+  SetPasswordAuthViews,
+};

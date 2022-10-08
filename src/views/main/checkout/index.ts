@@ -1,3 +1,5 @@
-export * from "./account_info";
-export * from "./delivery_info";
-export * from "./payment";
+import AccountInfoCheckout from "./account_info";
+import DeliveryInfoCheckout from "./delivery_info";
+import PaymentCheckout from "./payment";
+
+export { AccountInfoCheckout, DeliveryInfoCheckout, PaymentCheckout };

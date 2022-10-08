@@ -1,5 +1,7 @@
 import React from "react";
 
-export const ProductListMainViews = () => {
+const ProductListMainViews = () => {
   return <div>ProductListMainViews</div>;
 };
+
+export default ProductListMainViews;

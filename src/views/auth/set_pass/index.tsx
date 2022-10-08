@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { NavLink } from "react-router-dom";
 
-export const SetPasswordAuthViews = () => {
+const SetPasswordAuthViews = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   return (
@@ -73,3 +73,5 @@ export const SetPasswordAuthViews = () => {
     </div>
   );
 };
+
+export default SetPasswordAuthViews;

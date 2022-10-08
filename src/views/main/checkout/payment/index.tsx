@@ -1,5 +1,7 @@
 import React from "react";
 
-export const PaymentCheckout = () => {
+const PaymentCheckout = () => {
   return <div>PaymentCheckout</div>;
 };
+
+export default PaymentCheckout;

@@ -11,7 +11,7 @@ const MainLayout = () => {
     let subscribe = true;
 
     if (subscribe) {
-      // protecteing router
+      // protecting router
       if (!cookies.access_token) {
         Swal.fire({
           title: "Unauthorized!",

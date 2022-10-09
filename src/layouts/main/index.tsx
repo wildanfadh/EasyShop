@@ -1,7 +1,34 @@
-import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import React, { useEffect } from "react";
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
+import { useCookies } from "react-cookie";
+import Swal from "sweetalert2";
 
 const MainLayout = () => {
+  let navigate = useNavigate();
+  const [cookies] = useCookies(["access_token"]);
+
+  useEffect(() => {
+    let subscribe = true;
+
+    if (subscribe) {
+      // protecteing router
+      if (!cookies.access_token) {
+        Swal.fire({
+          title: "Unauthorized!",
+          text: "Access rejected!",
+          icon: "error",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+        navigate("auth/login");
+      }
+    }
+
+    return () => {
+      subscribe = false;
+    };
+  }, [cookies]);
+
   return (
     <div>
       <div className="navbar bg-base-100 px-5 fixed bg-transparent z-10 lg:px-24">

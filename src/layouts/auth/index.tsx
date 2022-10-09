@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
-export const AuthLayout = () => {
+const AuthLayout = () => {
   return (
     <div>
       <div className="navbar bg-base-100 px-5 lg:px-24">
@@ -94,3 +94,5 @@ export const AuthLayout = () => {
     </div>
   );
 };
+
+export default AuthLayout;

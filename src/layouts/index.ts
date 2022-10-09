@@ -1,2 +1,4 @@
-export * from "./auth";
-export * from "./main";
+import AuthLayout from "./auth";
+import MainLayout from "./main";
+
+export { MainLayout, AuthLayout };

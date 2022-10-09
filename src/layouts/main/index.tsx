@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
-export const MainLayout = () => {
+const MainLayout = () => {
   return (
     <div>
       <div className="navbar bg-base-100 px-5 fixed bg-transparent z-10 lg:px-24">
@@ -88,3 +88,5 @@ export const MainLayout = () => {
     </div>
   );
 };
+
+export default MainLayout;

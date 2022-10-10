@@ -1,6 +1,5 @@
 import {
   CLEAR_STATE_CATEGORY,
-  CATEGORY_REQUEST,
   CATEGORY_REQUEST_SUCCESS,
   CATEGORY_REQUEST_FAILED,
 } from "../types/category.types";
@@ -9,7 +8,7 @@ import { BASE_URL } from "../../config";
 
 // get all categories
 export const getAllCategories = () => {
-  return (dispatch: any) => {
+  return (dispatch) => {
     const config = {
       method: "GET",
       url: `${BASE_URL}/categories`,

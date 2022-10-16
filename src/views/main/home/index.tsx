@@ -2,18 +2,22 @@ import React, { useState, useEffect, useCallback } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import { connect } from "react-redux";
 import { getAllCategories } from "../../../redux/actions/category.action";
+import { getAllProducts } from "../../../redux/actions/product.action";
 import { CLEAR_STATE_CATEGORY } from "../../../redux/types/category.types";
+import { CLEAR_STATE_PRODUCT } from "../../../redux/types/product.types";
 
 // components
 import CardCategory from "../../../components/CardCategory";
+import CardCarousel from "../../../components/CardCarousel";
 
 // assets
 import heroVector from "../../../assets/vector1.svg";
 import Image1 from "../../../assets/Image1.png";
 import Image2 from "../../../assets/Image2.png";
 
-const HomeMainViews = ({ categoryState, dispatch }: any) => {
+const HomeMainViews = ({ categoryState, productState, dispatch }: any) => {
   const [dataCategories, setDataCategories] = useState([]);
+  const [dataProducts, setDataProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -29,12 +33,22 @@ const HomeMainViews = ({ categoryState, dispatch }: any) => {
         dispatch({ type: CLEAR_STATE_CATEGORY });
         setIsLoading(false);
       }
+      if (dataProducts.length < 1) {
+        setIsLoading(true);
+        dispatch(getAllProducts());
+      }
+      if (productState.status) {
+        setDataProducts(productState.data);
+        dispatch({ type: CLEAR_STATE_PRODUCT });
+        setIsLoading(false);
+      }
     }
     return () => {
       subscribe = false;
     };
   }, [dataCategories, categoryState]);
   // console.log(dataCategories, categoryState);
+  // console.log(dataProducts, productState);
 
   return (
     <div className="overflow-hidden mb-20">
@@ -82,6 +96,15 @@ const HomeMainViews = ({ categoryState, dispatch }: any) => {
           </>
         ) : null}
       </div>
+
+      {/* products section */}
+      <div className="flex w-full h-auto my-20 justify-center">
+        {dataProducts.length > 0 ? (
+          <>
+            <CardCarousel data={dataProducts} />
+          </>
+        ) : null}
+      </div>
     </div>
   );
 };
@@ -89,6 +112,7 @@ const HomeMainViews = ({ categoryState, dispatch }: any) => {
 const mapStateToProps = (state: any) => {
   return {
     categoryState: state.categories,
+    productState: state.products,
   };
 };
 

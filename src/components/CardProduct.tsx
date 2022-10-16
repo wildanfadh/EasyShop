@@ -1,16 +1,12 @@
 import React, { useState, useEffect } from "react";
 
-const CardCategory = (props) => {
+const CardProduct = (props) => {
   // console.log(props);
 
   return (
     <div className="card bg-base-100 shadow-2xl mx-5 hover:cursor-pointer">
       <figure>
-        <img
-          className="rounded max-w-[150px]"
-          src={props.item.image}
-          alt={props.item.name}
-        />
+        <img src={props.item.image} alt={props.item.name} />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{props.item.name}</h2>
@@ -19,4 +15,4 @@ const CardCategory = (props) => {
   );
 };
 
-export default CardCategory;
+export default CardProduct;

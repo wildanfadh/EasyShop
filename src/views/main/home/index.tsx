@@ -14,6 +14,7 @@ import CardCarousel from "../../../components/CardCarousel";
 import heroVector from "../../../assets/vector1.svg";
 import Image1 from "../../../assets/Image1.png";
 import Image2 from "../../../assets/Image2.png";
+import vegetables_sb from "../../../assets/vegetables_sb.svg";
 
 const HomeMainViews = ({ categoryState, productState, dispatch }: any) => {
   const [dataCategories, setDataCategories] = useState([]);
@@ -105,6 +106,35 @@ const HomeMainViews = ({ categoryState, productState, dispatch }: any) => {
           </>
         ) : null}
       </div>
+
+      {/* subscribetion section */}
+      <div className="flex flex-row gap-9 w-full h-auto bg-slate-100">
+        <div className="block w-[40rem]">
+          <img src={vegetables_sb} alt="vegetables" />
+        </div>
+        <div className="flex flex-col gap-7 justify-center">
+          <p className="font-bold text-xl whitespace-normal">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p>Subscribe to get 10% Discount and promotion</p>
+
+          <form className="flex flex-row gap-3">
+            <input
+              type="text"
+              className="input input-md rounded-lg w-8/12"
+              placeholder="Email Address"
+            />
+            <button
+              type="button"
+              className="btn btn-secondary rounded-md text-neutral"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      {/* Footer section */}
     </div>
   );
 };

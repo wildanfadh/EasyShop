@@ -75,7 +75,7 @@ const CardCarousel = (props) => {
                 if (index < 10) {
                   return (
                     <SwiperSlide key={index}>
-                      <div className="card w-56 h-72 shadow-xl mx-1">
+                      <div className="card w-56 h-72 shadow-xl hover:cursor-pointer">
                         <figure>
                           <img src={item.images[0]} alt="Shoes" />
                         </figure>

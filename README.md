@@ -61,6 +61,7 @@ Easyshop is a simple E-commerce project running with <a href="https://vitejs.dev
 The following tools were used in this project:
 
 - [Node.js](https://nodejs.org/en/)
+- [Vite](https://vitejs.dev/)
 - [React](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 

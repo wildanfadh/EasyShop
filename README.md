@@ -52,8 +52,8 @@ Easyshop is a simple E-commerce project running with <a href="https://vitejs.dev
 
 ## :sparkles: Features
 
-:heavy_check_mark: Simple
-:heavy_check_mark: Responsive
+:heavy_check_mark: Simple\
+:heavy_check_mark: Responsive\
 :heavy_check_mark: Fast
 
 ## :rocket: Technologies

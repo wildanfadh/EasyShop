@@ -46,7 +46,7 @@
 
 ## :dart: About
 
-Easyshop is a simple E-commerce project running with <a href="https://vitejs.dev/" target="_blank">Vite</a>, and the help of free API from <a href="https://fakeapi.platzi.com/" target="_blank">Platzi Fake Store API</a>.
+Easyshop is a simple E-commerce project running with <a href="https://vitejs.dev/" target="_blank">Vite</a>, and the help of free API from <a href="https://fakeapi.platzi.com/" target="_blank">Platzi Fake Store API</a>. Design from <a href="https://ui4free.com/website-templates/cosmetic-store-figma-website-template.htm" target="_blank">Cosmetic Store Figma Website Template</a>
 
 ## :sparkles: Features
 

@@ -31,7 +31,7 @@ const MainLayout = () => {
 
   return (
     <div>
-      <div className="navbar bg-base-100 px-5 fixed bg-transparent z-10 lg:px-24">
+      <div className="navbar bg-base-100 px-5 fixed bg-transparent z-20 lg:px-24">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost btn-circle lg:hidden">

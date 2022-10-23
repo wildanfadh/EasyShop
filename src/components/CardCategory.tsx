@@ -7,7 +7,7 @@ const CardCategory = (props) => {
     <div className="card bg-base-100 shadow-2xl mx-5 hover:cursor-pointer">
       <figure>
         <img
-          className="rounded max-w-[150px]"
+          className="hidden lg:block rounded max-w-[150px]"
           src={props.item.image}
           alt={props.item.name}
         />

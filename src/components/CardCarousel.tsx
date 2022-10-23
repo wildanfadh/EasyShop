@@ -64,10 +64,24 @@ const CardCarousel = (props) => {
         style={styles.product_section}
       >
         <Swiper
-          spaceBetween={50}
-          slidesPerView={5}
+          // spaceBetween={50}
+          // slidesPerView={5}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 5,
+              spaceBetween: 50,
+            },
+          }}
         >
           {props.data.length > 0 ? (
             <>

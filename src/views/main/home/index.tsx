@@ -52,7 +52,7 @@ const HomeMainViews = ({ categoryState, productState, dispatch }: any) => {
   // console.log(dataProducts, productState);
 
   return (
-    <div className="overflow-hidden mb-20">
+    <div className="overflow-hidden">
       {/* hero section */}
       <div className="flex w-full h-[700px] bg-slate-100">
         <div className="flex flex-col space-y-3 absolute top-36 p-10 lg:top-80 lg:left-16 z-10">
@@ -82,13 +82,13 @@ const HomeMainViews = ({ categoryState, productState, dispatch }: any) => {
       </div>
 
       {/* categories section */}
-      <div className="flex w-full h-auto my-40 justify-center">
+      <div className="flex w-full h-auto my-40 flex-wrap justify-center">
         {dataCategories.length > 0 ? (
           <>
             {dataCategories.map((item, index) => {
               if (index < 5) {
                 return (
-                  <div key={index}>
+                  <div key={index} className="my-5">
                     <CardCategory item={item} />
                   </div>
                 );
@@ -109,10 +109,10 @@ const HomeMainViews = ({ categoryState, productState, dispatch }: any) => {
 
       {/* subscribetion section */}
       <div className="flex flex-row gap-9 w-full h-auto bg-slate-100">
-        <div className="block w-[40rem]">
+        <div className="hidden lg:block w-[40rem]">
           <img src={vegetables_sb} alt="vegetables" />
         </div>
-        <div className="flex flex-col gap-7 justify-center">
+        <div className="flex flex-col gap-7 justify-center p-5">
           <p className="font-bold text-xl whitespace-normal">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
@@ -135,6 +135,39 @@ const HomeMainViews = ({ categoryState, productState, dispatch }: any) => {
       </div>
 
       {/* Footer section */}
+      <div className="block width-full h-auto bg-secondary mt-10 pt-20 pb-2">
+        <div className="flex flex-col-reverse gap-5 text-center lg:flex-row justify-evenly items-center w-full h-2/3">
+          <div className="flex-col text-neutral">
+            <h3 className="text-orange-300">Services</h3>
+            <h3>Email Marketing</h3>
+            <h3>Campaigns</h3>
+            <h3>Branding</h3>
+            <h3>Offline</h3>
+          </div>
+          <div className="flex-col text-neutral">
+            <h3 className="text-orange-300">About</h3>
+            <h3>Our Story</h3>
+            <h3>Benefits</h3>
+            <h3>Team</h3>
+            <h3>Careers</h3>
+          </div>
+          <div className="flex-col text-neutral">
+            <h3 className="text-orange-300">Help</h3>
+            <h3>FAQs</h3>
+            <h3>Contact Us</h3>
+          </div>
+          <div className="block">
+            <h2 className="font-bold text-4xl">EasyShop</h2>
+          </div>
+        </div>
+        <div className="flex flex-row w-ful gap-2 justify-center my-5">
+          <p>Made by </p>
+          <a href="https://github.com/wildanfadh" className="font-bold">
+            {" "}
+            WildanFadh
+          </a>
+        </div>
+      </div>
     </div>
   );
 };

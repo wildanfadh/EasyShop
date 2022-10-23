@@ -26,9 +26,11 @@
 
 <!-- Status -->
 
+<!--
 <h4 align="center">
 	🚧  Easyshop 🚀 Under construction...  🚧
 </h4>
+-->
 
 <hr>
 
@@ -50,9 +52,9 @@ Easyshop is a simple E-commerce project running with <a href="https://vitejs.dev
 
 ## :sparkles: Features
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: Simple;\
+:heavy_check_mark: Responsive;\
+:heavy_check_mark: Fast;
 
 ## :rocket: Technologies
 

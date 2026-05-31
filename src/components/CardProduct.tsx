@@ -1,15 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-const CardProduct = (props) => {
-  // console.log(props);
+interface CardProductProps {
+  item: {
+    title: string;
+    images: string[];
+    price: number;
+  };
+}
 
+const CardProduct = (props: CardProductProps) => {
   return (
     <div className="card bg-base-100 shadow-2xl mx-5 hover:cursor-pointer">
       <figure>
-        <img src={props.item.image} alt={props.item.name} />
+        <img src={props.item.images[0]} alt={props.item.title} />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">{props.item.name}</h2>
+        <h2 className="card-title">{props.item.title}</h2>
+        <p>${props.item.price}</p>
       </div>
     </div>
   );

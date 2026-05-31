@@ -8,7 +8,7 @@ import { BASE_URL } from "../../config";
 
 // get all categories
 export const getAllCategories = () => {
-  return (dispatch) => {
+  return (dispatch: any) => {
     const config = {
       method: "GET",
       url: `${BASE_URL}/categories`,

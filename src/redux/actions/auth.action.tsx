@@ -12,14 +12,13 @@ import {
 } from "../types/auth.types";
 import axios from "axios";
 import { BASE_URL } from "../../config";
-// import { storeDataLogin, removeDataLogin } from "../../utils";
+
 // Login Action
 export const loginRequest = (data: any) => {
   return (dispatch: any) => {
     const config = {
       method: "POST",
       url: `${BASE_URL}/auth/login`,
-      // params: {},
       data: data,
       headers: {
         "Content-Type": "application/json",
@@ -28,7 +27,6 @@ export const loginRequest = (data: any) => {
 
     axios(config)
       .then((res) => {
-        // storeDataLogin(res.data.token_type + " " + res.data.token_access);
         dispatch({
           type: LOGIN_REQUEST_SUCCESS,
           payload: {
@@ -42,7 +40,7 @@ export const loginRequest = (data: any) => {
           type: LOGIN_REQUEST_FAILED,
           payload: {
             data: null,
-            message: err.response.data.message,
+            message: err.response?.data?.message || "Login failed, please check your connection",
           },
         });
       });
@@ -51,14 +49,10 @@ export const loginRequest = (data: any) => {
 
 // Logout Action
 export const LogoutRequest = (data: any) => {
-  console.log("data logout", data);
-
   return (dispatch: any) => {
     const config = {
       method: "PUT",
       url: `${BASE_URL}/logout`,
-      // params: {},
-      // data: data,
       headers: {
         Authorization: `Bearer ${data.access_token}`,
         "Content-Type": "application/json",
@@ -67,9 +61,6 @@ export const LogoutRequest = (data: any) => {
 
     axios(config)
       .then((res) => {
-        // removeDataLogin();
-        console.log("response api", res);
-
         dispatch({
           type: LOGOUT_REQUEST_SUCCESS,
           payload: {
@@ -83,7 +74,7 @@ export const LogoutRequest = (data: any) => {
           type: LOGOUT_REQUEST_FAILED,
           payload: {
             data: null,
-            message: err.response.data.message,
+            message: err.response?.data?.message || "Logout failed, please check your connection",
           },
         });
       });

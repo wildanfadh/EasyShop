@@ -22,7 +22,7 @@ const LoginAuthViews = ({ formChange, loginAuthModel, dispatch }: any) => {
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => {
+  const onSubmit = (data: any) => {
     // console.log(data);
     setBtnLoading(true);
     dispatch(loginRequest(data));

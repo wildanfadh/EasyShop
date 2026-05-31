@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useCallback } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 import { getAllCategories } from "../../../redux/actions/category.action";
 import { getAllProducts } from "../../../redux/actions/product.action";
@@ -12,8 +12,8 @@ import CardCarousel from "../../../components/CardCarousel";
 
 // assets
 import heroVector from "../../../assets/vector1.svg";
-import Image1 from "../../../assets/Image1.png";
-import Image2 from "../../../assets/Image2.png";
+import Image1 from "../../../assets/image1.png";
+import Image2 from "../../../assets/image2.png";
 import vegetables_sb from "../../../assets/vegetables_sb.svg";
 
 const HomeMainViews = ({ categoryState, productState, dispatch }: any) => {
@@ -47,9 +47,7 @@ const HomeMainViews = ({ categoryState, productState, dispatch }: any) => {
     return () => {
       subscribe = false;
     };
-  }, [dataCategories, categoryState]);
-  // console.log(dataCategories, categoryState);
-  // console.log(dataProducts, productState);
+  }, [dataCategories, categoryState, dataProducts, productState, dispatch]);
 
   return (
     <div className="overflow-hidden">

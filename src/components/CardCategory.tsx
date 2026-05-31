@@ -1,8 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-const CardCategory = (props) => {
-  // console.log(props);
+interface CardCategoryProps {
+  item: {
+    name: string;
+    image: string;
+  };
+}
 
+const CardCategory = (props: CardCategoryProps) => {
   return (
     <div className="card bg-base-100 shadow-2xl mx-5 hover:cursor-pointer">
       <figure>

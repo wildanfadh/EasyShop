@@ -5,9 +5,9 @@ import {
 import axios from "axios";
 import { BASE_URL } from "../../config";
 
-// get all categories
+// get all products
 export const getAllProducts = () => {
-  return (dispatch) => {
+  return (dispatch: any) => {
     const config = {
       method: "GET",
       url: `${BASE_URL}/products`,

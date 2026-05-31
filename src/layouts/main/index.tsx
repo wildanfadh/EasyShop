@@ -55,20 +55,16 @@ const MainLayout = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Shop</a>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <a>Order</a>
-              </li>
-              <li>
-                <a>Cart</a>
-              </li>
-              <li>
-                <a>Contact</a>
+                <NavLink to="/product_list">Shop</NavLink>
               </li>
             </ul>
           </div>
-          <a className="btn btn-sm btn-ghost normal-case text-xl">EasyShop</a>
+          <NavLink to="/" className="btn btn-sm btn-ghost normal-case text-xl">
+            EasyShop
+          </NavLink>
         </div>
         <div className="navbar-end lg:hidden">
           <div className="flex-row space-x-3">
@@ -87,16 +83,10 @@ const MainLayout = () => {
           <div className="flex-row space-x-3">
             <ul className="menu menu-horizontal menu-compact p-0">
               <li>
-                <a>Shop</a>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <a>Order</a>
-              </li>
-              <li>
-                <a>Cart</a>
-              </li>
-              <li>
-                <a>Contact</a>
+                <NavLink to="/product_list">Shop</NavLink>
               </li>
             </ul>
             <NavLink to="/auth/register" className="btn btn-sm btn-neutral">

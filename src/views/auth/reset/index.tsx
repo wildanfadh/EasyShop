@@ -26,7 +26,7 @@ const ResetAuthViews = () => {
                 />
               </div>
               <NavLink
-                to="/auth/reset"
+                to="/auth/set_pass"
                 className="btn btn-secondary text-neutral font-semibold my-10 min-w-full"
               >
                 Reset Password
